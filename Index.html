@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+    <title class="main">Kapazitätsrechner</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <div>
+                <h1 class="labels"><u>Kapazitätsrechner</u></h1>
+                <h4 class="labels"><i>1=1000GB</i></h3>
+            </div>
+            <div>
+                <!--Eingabe Bereich-->
+                <div id="inputArea">
+                    <Label class="labels"><u>Eingabe:</u></Label>
+                    <div>
+                        <input type="text" id="textAreaInput">
+                    </div>
+                </div>
+                <div id="settingsArea">
+                    <Label class="labels"><u>Toleranz:</u></Label>
+                    <div>
+                        <select name="Toleranz" id="comboboxToleranz">
+                            <option></option>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                            <option>60</option>
+                            <option>70</option>
+                            <option>80</option>
+                            <option>90</option>
+                            <option>100</option>
+                        </select>
+                    </div>
+                </div>
+                <hr noshade width="200" size="2" align="left" color="white">
+                <!-- Aktions Bereich-->
+                <div id="commandArea">
+                    <Button id="buttonCalc" onClick="calculation()">Berechnen</Button>
+                    <button id="buttonReset" onClick="reset()">Zurücksetzten</button>
+                </div>
+                <!-- Ausgabe Bereich-->
+                <div id="outputArea">
+                    <Label class="labels"><u>Ausgabe:</u></Label>
+                    <div>
+                        <input type="text" id="textAreaOutput" readonly>
+                        <button class="btncopytoclipboard" onclick="copytoclipboardOut()"></button>
+                    </div>
+                    <label class="labels"><u>Ausgabe+Toleranz:</u></label>
+                    <div>
+                        <input type="text" id="textAreaOutputToleranz" readonly>
+                        <button class="btncopytoclipboard" onclick="copytoclipboardOutT()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Skript.js"></script>
+</body>
+</html>
