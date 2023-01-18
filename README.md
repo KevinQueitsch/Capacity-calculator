@@ -2,4 +2,4 @@
 Calculation of a database size, with additional calculation of the tolerance.
 
 ### Notice
-Programm only in German available.
+Program only in German available.
